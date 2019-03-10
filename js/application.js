@@ -1,5 +1,4 @@
-'use strict';
- 
+
 $(document).ready(function () {
     var ctx = $("#myChart");
     var myChart = new Chart(ctx, {
@@ -17,7 +16,7 @@ $(document).ready(function () {
         options: {
           title: {
             display: true,
-            text: 'Predicted world population (millions) in 2050'
+            text: 'transportation modes'
           }
         }
     });
