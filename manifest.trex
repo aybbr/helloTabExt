@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <dashboard-extension id="com.ayoub.rocks" extension-version="0.1.1">
+    <default-locale>en_US</default-locale>
+    <name resource-id=""/>
+    <description>Tableau Extension test</description>
+    <author name="Ayoub Briki" email="Your Email" website="https://ayoub.rocks"/>
+    <min-api-version>0.9</min-api-version>
+    <source-location>
+      <url>http://localhost:8080</url>
+    </source-location>
+    <icon></icon>
+    <permissions>
+      <permission>full data</permission>
+    </permissions>
+  </dashboard-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">Sample Extension</text>
+    </resource>
+  </resources>
+</manifest>

@@ -1,2 +1,3 @@
 # hello Tablea Extensions
-setting upsample tableau extension
+setting up a sample tableau extension
+
