@@ -1,0 +1,12 @@
+{
+  "name": "helloTabExt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aybbr/helloTabExt.git",
+  "author": "aybbr",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  }
+}
