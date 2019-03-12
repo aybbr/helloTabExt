@@ -1,6 +1,4 @@
-
-	
-'use strict';
+	'use strict';
   
 (function () {
    $(document).ready(function () {
@@ -41,36 +39,13 @@
          var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-               labels: labels, // This now comes from Tableau
+               labels: labels, // summary data returned from tableau
                datasets: [{
                   backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                  data: data // This now comes from Tableau
+                  data: data // summary data returned from tableau
                }]
             }
          });
       });
    }
 })();
-
-/* $(document).ready(function () {
-    var ctx = $("#myChart");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ["bus", "bike", "car", "scooter", "train"],
-          datasets: [
-            {
-              label: "number of trips",
-              backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-              data: [2690,1267,1726,881,4456]
-            }
-          ]
-        },
-        options: {
-          title: {
-            display: true,
-            text: 'transportation modes'
-          }
-        }
-    });
-}); */
