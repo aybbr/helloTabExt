@@ -48,4 +48,20 @@
          });
       });
    }
+//})();
+function configure() {
+    const popupUrl=`${window.location.origin}/dialog.html`;
+    let defaultPayload="";
+    tableau.extensions.ui.displayDialogAsync(popupUrl, defaultPayload, { height:300, width:500 }).then((closePayload) => {
+      drawChartJS();
+    }).catch((error) => {
+      switch (error.errorCode) {
+        case tableau.ErrorCodes.DialogClosedByUser:
+          console.log("Dialog was closed by user");
+          break;
+        default:
+          console.error(error.message);
+      }
+    });
+  }
 })();
